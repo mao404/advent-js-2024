@@ -10,31 +10,11 @@ Ten en cuenta entonces que el `*` puede estar dentro, fuera o incluso no estar. 
 Ejemplos:
 
 ```ts
-inBox([
-  "###",
-  "#*#",
-  "###"
-]) // ➞ true
+inBox(["###", "#*#", "###"]); // ➞ true
 
-inBox([
-  "####",
-  "#* #",
-  "#  #",
-  "####"
-]) // ➞ true
+inBox(["####", "#* #", "#  #", "####"]); // ➞ true
 
-inBox([
-  "#####",
-  "#   #",
-  "#  #*",
-  "#####"
-]) // ➞ false
+inBox(["#####", "#   #", "#  #*", "#####"]); // ➞ false
 
-inBox([
-  "#####",
-  "#   #",
-  "#   #",
-  "#   #",
-  "#####"
-]) // ➞ false
+inBox(["#####", "#   #", "#   #", "#   #", "#####"]); // ➞ false
 ```
